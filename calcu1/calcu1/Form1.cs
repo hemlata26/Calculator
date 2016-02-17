@@ -44,5 +44,10 @@ namespace calcu1
             textBox3.Text = "";
 
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            textBox3.Text = (Convert.ToInt32(textBox1.Text) * Convert.ToInt32(textBox1.Text)).ToString();
+        }
     }
 }
