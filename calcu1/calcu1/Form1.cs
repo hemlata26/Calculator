@@ -49,5 +49,10 @@ namespace calcu1
         {
             textBox3.Text = (Convert.ToInt32(textBox1.Text) * Convert.ToInt32(textBox1.Text)).ToString();
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            textBox3.Text = (1 / Convert.ToDecimal(textBox1.Text)).ToString();
+        }
     }
 }
