@@ -20,21 +20,25 @@ namespace calcu1
         private void button1_Click(object sender, EventArgs e)
         {
             textBox3.Text = (Convert.ToInt32(textBox1.Text) + Convert.ToInt32(textBox2.Text)).ToString();
+            label3.Text = "A + B =";
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             textBox3.Text = (Convert.ToInt32(textBox1.Text) - Convert.ToInt32(textBox2.Text)).ToString();
+            label3.Text = "A - B =";
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             textBox3.Text = (Convert.ToInt32(textBox1.Text) * Convert.ToInt32(textBox2.Text)).ToString();
+            label3.Text = "A * B =";
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            textBox3.Text = (Convert.ToInt32(textBox1.Text) / Convert.ToInt32(textBox2.Text)).ToString();
+            textBox3.Text = (Convert.ToDecimal(textBox1.Text) / Convert.ToDecimal(textBox2.Text)).ToString();
+            label3.Text = "A / B =";
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -43,6 +47,19 @@ namespace calcu1
             textBox2.Text = "";
             textBox3.Text = "";
 
+            label3.Text = "Result =";
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            textBox3.Text = (Convert.ToInt32(textBox1.Text) * Convert.ToInt32(textBox1.Text)).ToString();
+            label3.Text = "A^2 =";
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            textBox3.Text = (1 / Convert.ToDecimal(textBox1.Text)).ToString();
+            label3.Text = "1/A =";
         }
     }
 }
