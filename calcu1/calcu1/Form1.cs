@@ -73,7 +73,7 @@ namespace calcu1
             string flag = (String.Compare(MathOperation, "Square", true)).ToString();
             if (flag!="0" && ((string.IsNullOrEmpty(textBox1.Text) || string.IsNullOrEmpty(textBox2.Text) || (string.IsNullOrEmpty(textBox2.Text) && string.IsNullOrEmpty(textBox1.Text)))))
             {
-                MessageBox.Show("please provide valid input");
+                MessageBox.Show("please provide valid inputdata");
             }
             else
             {
